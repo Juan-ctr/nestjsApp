@@ -1,0 +1,25 @@
+Important scripts for building a project in nestjs :
+*=>for install nest global client :
+npm i -g @nestjs/cli
+
+*=>For build a new nest project :
+nest new *project-name*
+
+*=>This is not a script but for a new project, it is recomended to remove app.controller.spect.ts, app.controller.ts, app.service.ts
+The services and controllers files are going to be created in modules apart, in order to have the proyect organiced
+
+*=>To start the project in watch mode:
+npm start:dev
+*=>To generate a new module:
+nest generate module customers
+*=>To generate a new controller:
+nest g controller customers/controllers/customers
+*=>To generate a new service:
+nest g service customers/services/customers
+*=>To install a package use to validate data transfer:
+npm i class-validator class-transformer
+*=>
+
+*=>
+
+*=>
