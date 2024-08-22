@@ -2,7 +2,7 @@ import { Address } from './Address';
 
 export interface Customer {
     id: number;
-    email: string;
+    emailAddress: string;
     name: string;
     address: Address;
 }

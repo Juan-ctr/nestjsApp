@@ -1,17 +1,22 @@
 import { Exclude } from 'class-transformer';
 
 export interface User {
+  id: number;
   username: string;
+  emailAddress: string;
   password: string;
 }
 
 export class SerializedUser {
-  username: string;
+  id: number;
+  username: string;  
+  emailAddress: string;
+
 
   @Exclude()
   password: string;
 
   constructor(partial: Partial<SerializedUser>){
     Object.assign(this, partial);
-  }
+  } 
 }

@@ -12,11 +12,11 @@ import { CreateAddressDto } from './CreateAddress.dto';
 export class CreateCustomerDto {
     @IsEmail()
     @IsNotEmpty()
-    email: string;
+    emailAddress: string;
     
-    @IsNumberString()
-    @IsNotEmpty()
-    id: number;
+    // @IsNumberString()
+    // @IsNotEmpty()
+    // id: number;
 
     @IsNotEmpty()
     @IsString()
